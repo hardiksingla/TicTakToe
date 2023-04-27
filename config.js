@@ -1,3 +1,4 @@
+
 function openPlayerConfig(event){
   editedPlayer = +event.target.dataset.playerid
   console.log(editedPlayer)
@@ -18,14 +19,14 @@ function savePlayerName(event){
     return;
   }
   if (editedPlayer === 1){
-    players[0].name = enteredPlyerData
-    console.log(players[0].name)
+    players[0].playerName = enteredPlyerData
+    console.log(players[0].playerName)
     playerOneName.textContent = enteredPlyerData
     closeConfig()
   }
   else if (editedPlayer === 2){
-    players[1].name = enteredPlyerData
-    console.log(players[1].name)
+    players[1].playerName = enteredPlyerData
+    console.log(players[1].playerName)
     playerTwoName.textContent = enteredPlyerData
     closeConfig()
   }
