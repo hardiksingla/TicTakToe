@@ -3,7 +3,9 @@ const backdrop = document.getElementById("backdrop")
 const playerNameForm = document.getElementById("playerNameForm")
 const errorMessage = document.getElementById("error");
 const activePlayerDisplay = document.getElementById("active-player-name")
-
+const winnerName = document.getElementById("winner")
+const endGame = document.getElementById("game-over")
+const endGameText =document.getElementById("endGameText")
 let turn = 0
 let players = [
   {
@@ -21,6 +23,7 @@ let gameData=[
   [0,0,0],
   [0,0,0],
 ]
+let round = 0
 
 const editPlayerOneName = document.getElementById("player1Name")
 const editPlayerTwoName = document.getElementById("player2Name")
