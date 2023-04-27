@@ -36,6 +36,7 @@ function selectGameBox(event) {
       winnerName.textContent = players[winner - 1].playerName;
     }
     endGame.style.display = "block";
+    activePlayerDisplay.parentElement.style.display="none"
   }
 }
 function switchPlayer() {
