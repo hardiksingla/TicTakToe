@@ -1,6 +1,5 @@
 function startNewGame() {
   gameArea.style.display = "block";
-  activePlayerDisplay.textContent = players[turn].playerName;
   gameData = [
     [0, 0, 0],
     [0, 0, 0],
@@ -14,6 +13,7 @@ function startNewGame() {
   endGame.style.display = "none";
   round = 0
   turn=0  
+  activePlayerDisplay.textContent = players[turn].playerName;
   activePlayerDisplay.parentElement.style.display="block"
 }
 function selectGameBox(event) {
