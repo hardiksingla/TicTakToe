@@ -9,11 +9,12 @@ function startNewGame() {
   for (const i of gameBoxes) {
     i.classList.remove("disabled");
     i.textContent = "";
-    activePlayerDisplay.parentElement.style.display="block"
+    
   }
   endGame.style.display = "none";
   round = 0
   turn=0  
+  activePlayerDisplay.parentElement.style.display="block"
 }
 function selectGameBox(event) {
   const row = event.target.dataset.row;
