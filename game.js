@@ -9,6 +9,7 @@ function startNewGame() {
   for (const i of gameBoxes) {
     i.classList.remove("disabled");
     i.textContent = "";
+    activePlayerDisplay.parentElement.style.display="block"
   }
   endGame.style.display = "none";
   round = 0
